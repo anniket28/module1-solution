@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="firstApp">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>First App</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./angular.js"></script>
+        <script src="./app.js"></script>
+    </head>
+    <body ng-controller="firstAppController">
+        <div class="container">
+            <label>
+                Enter food items that you usually eat for lunch (Please use Comma to Separate)
+                <br>
+                Empty item are not considered
+            </label>
+            <input type="text" class="items" ng-model="items">
+            <button style="margin-top: 10px;" ng-click="check();">Check If Too Much</button>
+            <label>{{message}}</label>
+        </div>
+    </body>
+</html>

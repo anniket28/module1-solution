@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    font-size: 25px;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.container label{
+    text-align: center;
+}
+input[type='text']{
+    width: 30em;
+    margin: 5px;
+    outline: none;
+    border-radius: 20px;
+    padding: 1px 10px;
+}
